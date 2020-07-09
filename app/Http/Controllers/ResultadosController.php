@@ -66,6 +66,7 @@ class ResultadosController extends Controller
 
             $i++;
         }
+        //dd('aaaa');
         //dd($partdesta);
 		//dd('----------------');
     	return view('welcome',compact('partdesta'));
