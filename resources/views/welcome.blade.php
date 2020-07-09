@@ -204,14 +204,6 @@
     <script src="{{ asset('plantilla/js/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('plantilla/js/jquery.slicknav.min.js') }}"></script>
 
-    <script src="{{ asset('plantilla/js/line-chart.js') }}"></script>
-    <!-- all pie chart -->
-    <script src="{{ asset('plantilla/js/pie-chart.js') }}"></script>
-    <!-- all bar chart -->
-    <script src="{{ asset('plantilla/js/bar-chart.js') }}"></script>
-    <!-- all map chart -->
-    <script src="{{ asset('plantilla/js/maps.js') }}"></script>
-    <!-- others plugins -->
     <script src="{{ asset('plantilla/js/plugins.js') }}"></script>
     <script src="{{ asset('plantilla/js/scripts.js') }}"></script>
 </body>
