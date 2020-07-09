@@ -16,3 +16,8 @@
 });*/
 
 Route::get('/','ResultadosController@welcome');
+
+
+Route::get('prueba', function () {
+    return view('prueba');
+});
