@@ -96,7 +96,7 @@
             <div class="container">
                 <div class="row">
                     @for($i=0;$i<4;$i++)
-                    <div class="col-lg-3">
+                    <div class="col-md-3">
                         <div class="col-md-12">
                             <div class="modal-dialog">
                                 <div class="modal-content">

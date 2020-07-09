@@ -30,8 +30,6 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!-- preloader area end -->
-    <!-- main wrapper start -->
     <div class="horizontal-main-wrapper">
         <!-- main header area start -->
         <div class="mainheader-area">
@@ -50,9 +48,7 @@
                                 <img class="avatar user-thumb" src="{{ asset('plantilla/images/author/avatar.png') }}" alt="avatar">
                                 <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Kumkum Rai <i class="fa fa-angle-down"></i></h4>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Message</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <a class="dropdown-item" href="#">Log Out</a>
+                                    <a class="dropdown-item" href="#">Salir</a>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +56,6 @@
                 </div>
             </div>
         </div>
-        <!-- main header area end -->
-        <!-- header area start -->
         <div class="header-area header-bottom">
             <div class="container">
                 <div class="row align-items-center">
@@ -90,167 +84,48 @@
                 </div>
             </div>
         </div>
-        <!-- header area end -->
-        <!-- page title area end -->
         <div class="main-content-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
+                    @for($i=0; $i<4; $i++)
+                    <div class="col-md-3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background: #3f4d50; color: #fff;">
+                                    <h5 class="modal-title">Primera división</h5>
+                                    <span style="float: right;">JOR 35</span>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-4" style="float: ;">                          
+                                            <a href="#" style="color: black;">{{ str_limit('BARCELONA',9) }}</a><br>
+                                            <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
                                         </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
+                                        <div class="col-lg-4" align="center" style="margin-top: 15px;">
+                                            <b>HOY</b>
+                                            <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
+                                        </div>
+                                        <div class="col-lg-4" style="float: ;">
+                                            <a href="#" style="color: black;">ESPANYOL</a><br>
+                                            <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
+                                    <p>
+                                        <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
+                                    </p>
+                                    <p>
+                                        <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
+                                        <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
+                                        <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success btn-block">Previa del partido</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endfor
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
@@ -292,129 +167,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="col-md-12">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header" style="background: #3f4d50; color: #fff;">
-                                        <h5 class="modal-title">Primera división</h5>
-                                        <span style="float: right;">JOR 35</span>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="float: ;">                          
-                                                <a href="#" style="color: black;">BARCELONA</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                            <div class="col-lg-4" align="center" style="margin-top: 15px;">
-                                                <b>HOY</b>
-                                                <button type="button" class="btn btn-flat btn-xs mb-1" disabled style="background: #3f4d50 !important; color: #fff;">16:00</button>
-                                            </div>
-                                            <div class="col-lg-4" style="float: ;">
-                                                <a href="#" style="color: black;">ESPANYOL</a><br>
-                                                <img src="{{ asset('plantilla/images/pru.png') }}" height="60" width="60" class="mb-1">
-                                            </div>
-                                        </div>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-block btn-xs mb-1" disabled>M. Partidazo, ESPN 2, ESPN 2, ...</a>
-                                        </p>
-                                        <p>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">22</a>
-                                            <a href="#" class="btn btn-flat btn-secondary btn-xs mb-1">¡Comenta!</a>
-                                            <a href="#" class="btn btn-flat btn-success btn-xs mb-1">Más info</a>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-success btn-block">Previa del partido</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                </div>                
             </div>
         </div>
-        <!-- main content area end -->
-        <!-- footer area start-->
         <footer>
             <div class="footer-area">
                 <p>© Copyright 2020. <a href="https://eiche.cl">EICHE</a>.</p>
